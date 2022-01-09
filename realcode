@@ -1,0 +1,36 @@
+import pandas as pd 
+df= pd.read_cvs("employeedata.cvs")
+df=pd.read_excel("employeedata.xls")
+df.loc[0,'Email Address']='asinabdou@helpinghamds.org'
+df.loc[1,'Email Address']='larbaavaika@helpinghamds.org'
+df.loc[2,'Email Address']='tchabatidriss@helpinghamds.org'
+df.loc[3,'Email Address']='anababoris@helpinghamds.org'
+df.loc[4,'Email Address']='mengueblaise@helpinghamds.org'
+df.loc[5,'Email Address']='temgouarucel@helpinghamds.org'
+df.loc[6,'Email Address']='mekuloedimo@helpinghamds.org'
+df.loc[7,'Email Address']='essoloserena@helpinghamds.org'
+df.loc[8,'Email Address']='djoueric@helpinghamds.org'
+df.loc[9,'Email Address']='fankamfrancesca@helpinghamds.org'
+df.loc[10,'Email Address']='bilonfrankbell@helpinghamds.org'
+df.loc[11,'Email Address']='kadjiflorian@helpinghamds.org'
+df.loc[12,'Email Address']='mayaghislaine@helpinghamds.org'
+df.loc[13,'Email Address']='onanahonore@helpinghamds.org'
+df.loc[14,'Email Address']='kissokjeff@helpinghamds.org'
+df.loc[15,'Email Address']='emakojenifer@helpinghamds.org'
+df.loc[16,'Email Address']='zolekojenny@helpinghamds.org'
+df.loc[17,'Email Address']='abessolostephan@helpinghamds.org'
+df.loc[18,'Email Address']='sackjordan@helpinghamds.org'
+df.loc[19,'Email Address']='atanganajosepha@helpinghamds.org'
+df.loc[20,'Email Address']='merrickjoy@helpinghamds.org'
+df.loc[21,'Email Address']='tatchijunior@helpinghamds.org'
+df.loc[22,'Email Address']='michellekitou@helpinghamds.org'
+df.loc[23,'Email Address']='laurentatangana@helpinghamds.org'
+df.loc[24,'Email Address']='amewouegoumichelle@helpinghamds.org'
+df.loc[25,'Email Address']='yumbinaomie@helpinghamds.org'
+df.loc[26,'Email Address']='meugangtania@helpinghamds.org'
+df.loc[27,'Email Address']='fongangrosane@helpinghamds.org'
+df.loc[28,'Email Address']='mefoesandra@helpinghamds.org'
+df.loc[29,'Email Address']='noraophelie@helpinghamds.org'
+df.to_csv("newcsv.csv",index=False)
+df.to_excel("newxls.xls",index=False)
+print(df)
